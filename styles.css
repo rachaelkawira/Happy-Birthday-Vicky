@@ -1,0 +1,76 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffbf0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ff6f61;
+    margin: 0;
+    position: absolute; /* Position header on top */
+    top: 2%; /* Position it vertically in the center */
+    left: 50%; /* Position it horizontally in the center */
+    transform: translate(-50%, -50%); /* Center the header both vertically and horizontally */
+    z-index: 10; /* Ensure header is above the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for readability */
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    z-index: 5; /* Ensure subtitle is above background */
+    position: absolute; /* Ensure subtitle is also in front of background */
+    top: 4%;
+    left: 40%;
+  }
+  
+  /* First Image as Background */
+  .background-image {
+    background-image: url("D:/Rachael's files/My folder/Vicky's birthday/Pictures/312983c2-e914-48f0-8720-cee9ac7ac430.jpeg"); /* Use the first image as the background */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    height: 1200px; /* Adjust height as per preference */
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Text shadow for readability */
+  }
+  
+  /* Masonry Grid for Other Images */
+  .collage-masonry {
+    column-count: 3; /* Number of masonry columns */
+    column-gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .collage-masonry img {
+    width: 100%; /* Let the browser resize the width */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collage-masonry img:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
